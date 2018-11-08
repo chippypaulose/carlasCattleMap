@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<h3>{{title}}</h3>
+  <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="false"
+  title="Test">
+    <agm-marker *ngFor="let data of loc; let i = index" [latitude]="data.lat" [longitude]="data.lng" [iconUrl]="data.status">
+    </agm-marker>
+  </agm-map>
+
+
+
+<!-- <router-outlet></router-outlet> -->
